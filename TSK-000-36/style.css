@@ -1,103 +1,251 @@
 @font-face {
-    font-family: Gilroy;
-    src: url(./src/Gilroy-ExtraBold.otf);
+  font-family: Gilroy;
+  src: url(./src/Gilroy-ExtraBold.otf);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Gilroy';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy";
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 3rem;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
 }
 
-.heading .image{
-    height: 4.5rem;
+.heading .image {
+  height: 4rem;
 }
 
-.navLinks{
-    display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
-    font-size: 1.5rem;
+.navLinks {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    height:  80vh;
-    width: 100%;
+.navLinks li {
+  list-style: none;
 }
 
-.heroLeft{
-    width: 52%;
-    padding-left: 2.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+.navLinks li:hover {
+  color: #3b622b;
+}
+.navLinks i {
+  display: none;
 }
 
-.heroLeft p{
-    font-size: 1.275rem;
-    margin-bottom: 0.01rem;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 100%;
 }
 
-.heroLeft h2{
-    line-height: -30px;
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    font-weight: 900;
+.heroLeft {
+  width: 52%;
+  padding-left: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.strongWord{
-    color: #3B622B;
+.heroLeft p {
+  font-size: 1.275rem;
+  margin-bottom: 0.01rem;
 }
 
-.heroBtn{
-    margin-top: 2rem;
-    padding: 1rem 0.5rem;
-    border: 1px solid black;
+.heroLeft h2 {
+  line-height: -30px;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.strongWord {
+  color: #3b622b;
+}
+
+.heroBtn {
+  margin-top: 2rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #3b622b;
+  color: black;
+  cursor: pointer;
+}
+
+.heroRight {
+  width: 49%;
+  padding-left: 3rem;
+}
+
+.heroRight img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featuredInternships {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.featuredInternships h3 {
+  font-size: 3rem;
+}
+
+.internshipsCards {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRow {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: inset;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.cardHead {
+  font-size: 1.4rem;
+  margin-bottom: 0.125rem;
+}
+
+.card p {
+  margin-bottom: 0.125rem;
+}
+
+.internshipBtn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #3b622b;
+  color: black;
+  cursor: pointer;
+}
+
+.internshipBtn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.browseBtn {
+  border-radius: 100px;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.browseBtnResp{
+    display: none;
+}
+
+.introSection{
+    gap: 1rem;
+    text-align: center;
     border-radius: 10px;
-    background-color: transparent;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
 }
 
-.heroRight{
-    width: 49%;
-    padding-left: 3rem;
-}
-
-.heroRight img{
-    height: 100%;
+.introImg img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+    object-fit: fit;
+    height: 100%;
+}
 
+.introContent{
+    border-radius: 10px;
+    width: 50%;
+    padding: 8rem 5rem;
+    background-color: #8C52FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introContent h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+.introContent p{
+    font-weight: 300;
+    color: rgb(176, 167, 167);
+    text-align: left;
+    font-size: 1.25rem;
 }
 
 @media (max-width: 786px) {
-    .navbar{
-        padding-left: 1rem;
-    }
-    .heading .image{
-        height: 3rem;
-    }
-    .navLinks{
-        display: none;
-    }
-    .hero{
-        flex-direction: column;
-    }
-    .heroLeft{
-        width: 100%;
-    }
-    .heroRight{
-        padding-left: 1rem;
-        width: 100%;
-    }
+  .navbar {
+    padding-left: 1rem;
+  }
+  .heading .image {
+    height: 3rem;
+  }
+  .navLinks li{
+    display: none;
+  }
+  .navLinks i {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .heroLeft {
+    width: 100%;
+  }
+  .heroRight {
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .card {
+    padding: 0.5rem 1rem;
+  }
+  .cardHead {
+    margin-bottom: 0.5rem;
+  }
+  .cardRow {
+    flex-direction: column;
+  }
+  .browseBtn{
+    display: none;
+  }
+  .browseBtnResp{
+    display: block;
+}
+.introSection{
+    flex-direction: column;
+}
 }
