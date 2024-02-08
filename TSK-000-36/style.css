@@ -255,8 +255,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  top: 0;
-  position: relative;
 }
 
 .contact {
@@ -467,8 +465,6 @@ a{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    position: relative;
-    top: 0;
   }
 
   .updates h1{
