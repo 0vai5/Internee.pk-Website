@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem;
+  position: relative;
 }
 
 .heading .image {
@@ -307,7 +308,6 @@
 .update-field {
   display: flex;
   align-items: center;
-  border: 1px solid black;
   padding: 1rem 1rem;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -324,6 +324,7 @@ input {
   padding: 0.5rem;
   font-size: 1rem;
   border: none;
+  margin-left: 10px;
 }
 
 i {
@@ -335,6 +336,70 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+.contactContent{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 @media (max-width: 786px) {
   .navbar {
@@ -410,5 +475,8 @@ a{
   }
   .update-field{
     padding-right: 3rem;
+  }
+  .contactContent{
+    flex-direction: column;
   }
 }
