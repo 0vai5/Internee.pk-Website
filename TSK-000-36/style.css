@@ -593,7 +593,6 @@ a {
     margin-bottom: 2rem;
   }
   .contactCards .location {
-    padding: 0.5rem ;
-    
+    padding-right: 0;    
   }
 }
