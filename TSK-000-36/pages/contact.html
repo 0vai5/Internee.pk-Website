@@ -36,19 +36,22 @@
     </div>
     <div class="contactContent">
       <div class="contactForm">
-        <form class="form">
-          <h1 class="heading" style="text-align: center;">
-            <span class="strongWord protest-riot-regular">Project</span> in Mind?
-            <br>
-            <span class="strongWord protest-riot-regular">Contact</span> us
-          </h1>
-
-          <input style="margin-left: 0;" type="text" placeholder="Your email" class="input">
-          <textarea placeholder="Your message"></textarea>
-
-          <button style="background-color: #43A724;">Submit</button>
+        <form class="form" onsubmit="return validateForm()">
+            <h1 class="heading" style="text-align: center;">
+                <span class="strongWord protest-riot-regular">Project</span> in Mind?
+                <br>
+                <span class="strongWord protest-riot-regular">Contact</span> us
+            </h1>
+    
+            <input style="margin-left: 0;" type="text" placeholder="Your email" class="input" id="email">
+            <span id="emailError" style="color: red;"></span>
+    
+            <textarea placeholder="Your message" id="message"></textarea>
+    
+            <button style="background-color: #43A724;">Submit</button>
         </form>
-      </div>
+    </div>
+    
       <div class="contactCards">
         <div class="location">
           <i class="fa-regular fa-building"></i>
@@ -95,7 +98,7 @@
           <ul style="list-style: none; margin-left: 1rem;">
             <li style="color: #8c52fe; font-weight: 800;">Linkedin</li>
 
-            
+
             <a href="https://www.linkedin.com/company/internee-pk/">
               <li class="">Internee - pk</li>
             </a>
@@ -103,7 +106,7 @@
 
           </ul>
         </div>
-        
+
 
       </div>
 
