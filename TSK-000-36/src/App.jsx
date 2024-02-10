@@ -5,11 +5,8 @@ import HomePage from "./pages/HomePage";
 import Footer from './components/Footer';
 import ContactPage from "./pages/ContactPage";
 
-import LocomotiveScroll from 'locomotive-scroll'
-
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll()
   return (
     <main className="bg-slate-300/20">
       <Router>
