@@ -16,7 +16,7 @@ const FeaturedInternships = () => {
       </p>
       <div className="internshipsCards">
         <div className="cardRow">
-        <div className="card">
+          <div className="card">
             <img loading="lazy" src="https://internee.pk/images/jobs/analysis.jpg" alt="" />
             <h2 className="cardHead">Data Analysis</h2>
             <ul style={{ display: 'flex', justifyContent: 'space-around', listStyle: 'none', color: 'gray' }}>
@@ -61,9 +61,7 @@ const FeaturedInternships = () => {
             <button className="internshipBtn">Apply Now</button>
           </div>
         </div>
-        <button className="browseBtn browseBtnResp">Browse Internships</button>
       </div>
-      <button className="browseBtn">Browse Internships</button>
     </div>
   );
 }

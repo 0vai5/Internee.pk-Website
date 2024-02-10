@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   position: relative;
 }
 
@@ -119,8 +119,8 @@
 
 .featuredInternships {
   padding: 0.25rem;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .cardRow {
-  height: 50vh;
+  height: 49vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -379,7 +379,8 @@ a {
 .form {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   width: 300px;
@@ -451,8 +452,7 @@ a {
 .contactCards .location {
   background-color: #f0f8ff;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem 2rem;
   border-radius: 10px;
   width: 100%;
@@ -531,7 +531,8 @@ a {
 
 @media (max-width: 786px) {
   .navbar {
-    padding-left: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
   }
   .heading .image {
     height: 3rem;
@@ -540,12 +541,14 @@ a {
   .navLinks li {
     display: none;
   }
-  .navLinks div {
+
+  .navLinks div{
     display: block;
   }
+  
   .hero {
     flex-direction: column;
-    margin-bottom: 13rem; /* Stack heroLeft and heroRight in reverse order */
+    margin-bottom: 20rem; /* Stack heroLeft and heroRight in reverse order */
   }
 
   .heroLeft {
@@ -563,8 +566,8 @@ a {
     width: 100%;
   }
   .featuredInternships {
-    margin-top: 10rem;
     padding: 0.25;
+    margin-bottom: 70rem;
   }
   .card {
     margin-bottom: 1rem;
@@ -575,16 +578,6 @@ a {
   }
   .cardRow {
     flex-direction: column;
-    margin-bottom: 45rem;
-  }
-  .browseBtn {
-    display: none;
-  }
-  .browseBtnResp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
   }
   .feedbackSection {
     margin-top: 45rem; /* Adjust the value according to your design preference */
