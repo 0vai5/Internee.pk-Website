@@ -9,10 +9,7 @@ import LocomotiveScroll from 'locomotive-scroll'
 
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll({
-    el: ".container",
-    smooth: true,
-  })
+  const locomotiveScroll = new LocomotiveScroll()
   return (
     <main className="bg-slate-300/20">
       <Router>
