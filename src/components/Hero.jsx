@@ -21,7 +21,7 @@ const Hero = () => {
           <button className="heroBtn">Browse Internships</button>
         </div>
         <div className="heroRight">
-          <img loading="lazy" src="https://interneepk.netlify.app/images/OIG1.jpg" alt="Hero Image" />
+          <img loading="lazy" src="https://interneepkhtml.netlify.app/images/OIG1.jpg" alt="Hero Image" />
         </div>
       </div>
   )
