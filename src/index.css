@@ -80,7 +80,7 @@
 
 .heroLeft p {
   font-size: 1.275rem;
-  margin-bottom: 0.01rem;
+  margin-bottom: 1rem;
 }
 
 .heroLeft h2 {
@@ -94,16 +94,7 @@
   color: #3b622b;
 }
 
-.heroBtn {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem 0.5rem;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #3b622b;
-  color: black;
-  cursor: pointer;
-}
+
 
 .heroRight {
   width: 49%;
@@ -342,7 +333,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -560,9 +550,7 @@ a {
     width: 100%;
     padding-left: 0;
   }
-  .heroBtn {
-    margin-bottom: 2rem;
-  }
+  
   .heroRight {
     padding-left: 0.2rem;
     width: 100%;
@@ -609,6 +597,11 @@ a {
   .update-field {
     padding-right: 3rem;
   }
+
+  .contactForm{
+    display: flex;
+    justify-content: center;
+  }
   .contactContent {
     flex-direction: column-reverse;
   }
@@ -619,4 +612,144 @@ a {
   .contactCards .location {
     padding-right: 0;    
   }
+}
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #212121;
+  box-shadow: 0 0 0 2px #43a724;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #43a724;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #43a724;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #43a724;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+.form-control {
+  position: relative;
+  margin: 1rem 2rem;
+  width: 15rem;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 2px #43a724 solid;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: black;
+  background-color: transparent; /* Add this line to make the input background transparent */
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #8c52fe;
+}
+
+.form-control label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  pointer-events: none;
+   /* Add this line to set the initial color of the label text */
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 1rem;
+  min-width: 5px;
+  color: #43a724;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #8c52fe;
+  transform: translateY(-30px);
 }

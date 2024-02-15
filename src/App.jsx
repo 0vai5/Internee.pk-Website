@@ -4,9 +4,13 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import Footer from './components/Footer';
 import ContactPage from "./pages/ContactPage";
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 const App = () => {
+  const scroll = new LocomotiveScroll({
+    smooth: true
+  });
   return (
     <main className="bg-slate-300/20">
       <Router>
